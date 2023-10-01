@@ -30,11 +30,15 @@ function personalInformation () {
 /* Boton de Greetings */
 
 function greetings () {
+
+  // Don`t touch this code
+
   const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
   const nav = document.getElementById('Main-Index')
   nav.innerHTML = 'Greetings'
   nav.className = 'text-success'
+  //----------------------------------------------
 
   // Code here ------>>
 
