@@ -43,6 +43,23 @@ function greetings () {
   h1G.innerHTML = 'Lets Learn <b>"Greetings"</b>'
   mainContent.appendChild(h1G)
 
+  const paragrahf = document.createElement('p')
+  const contentParagrafh = document.createTextNode('This an example about how create a paragrafh in javascript')
+  
+  paragrahf.appendChild(contentParagrafh)
+  mainContent.appendChild(paragrahf)
+
+  // if you like make a paragrafh using more elements to html, look at this
+
+  const letter = document.createElement('p')
+  letter.innerHTML = ('This is an example using more elements of HMLT: <b><i>(This is a change using InnerHTML)</i></b>')
+
+  mainContent.appendChild(letter)
+  
+  //Esta propiedad es mayormente usada cuando necesitas manipular demasiado el parrafo
+  // Note: It is better not to abuse this property because it can generate
+  // bugs or at least increase the probability of them being generated.
+
 }
 
 /////////////////////////////////////////////////////////////////////////
