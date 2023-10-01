@@ -1,7 +1,7 @@
 function PresentContinuous () {
   const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
-  const nav = document.getElementById('sexo')
+  const nav = document.getElementById('Main-Index')
   nav.innerHTML = 'Present Continous'
   nav.className = 'text-success'
 
@@ -244,7 +244,7 @@ function resetExercise() {
  */
 
 function EverydayExpressions () {
-  const nav = document.getElementById('sexo')
+  const nav = document.getElementById('Main-Index')
   nav.innerHTML = 'Everyday Expressions'
   nav.className = 'text-success'
   const mainContent = document.getElementById('main-content')
@@ -457,7 +457,7 @@ function EverydayExpressions () {
  */
 
 function ShortQuestions () {
-  const nav = document.getElementById('sexo')
+  const nav = document.getElementById('Main-Index')
   nav.innerHTML = 'Short questions'
   nav.className = 'text-success'
   const mainContent = document.getElementById('main-content')

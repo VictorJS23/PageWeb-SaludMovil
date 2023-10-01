@@ -1,7 +1,7 @@
 function Possesions () {
 	const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
-  const nav = document.getElementById('sexo')
+  const nav = document.getElementById('Main-Index')
   nav.innerHTML = 'Possesions'
   nav.className = 'text-success'
 
@@ -295,7 +295,7 @@ example_titles()
 function ClassroomsObjects () {
 	const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
-  const nav = document.getElementById('sexo')
+  const nav = document.getElementById('Main-Index')
   nav.innerHTML = 'Classrooms Object'
   nav.className = 'text-success'
 
@@ -399,7 +399,7 @@ function ClassroomsObjects () {
 function PersonalItems () {
 	const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
-  const nav = document.getElementById('sexo')
+  const nav = document.getElementById('Main-Index')
   nav.innerHTML = 'Personal Items'
   nav.className = 'text-success'
 

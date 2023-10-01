@@ -1,7 +1,7 @@
 function QuestionsAndConversations() {
   const mainContent = document.getElementById('main-content');
   mainContent.innerHTML = '';
-  const nav = document.getElementById('sexo')
+  const nav = document.getElementById('Main-Index')
   nav.innerHTML = 'Questions and conversations'
   nav.className = 'text-success'
   
