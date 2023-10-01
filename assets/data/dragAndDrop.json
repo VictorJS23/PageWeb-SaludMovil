@@ -1,0 +1,59 @@
+{
+    "Animals": [
+        {
+            "id": 1,
+            "name": "camera",
+            "img": "./assets/img/dragAndDropGame/camera.png"
+        },
+        {
+            "id": 2,
+            "name": "cpu",
+            "img": "./assets/img/dragAndDropGame/cpu.png"
+        },
+        {
+            "id": 3,
+            "name": "hdd",
+            "img": "./assets/img/dragAndDropGame/hdd.png"
+        },
+        {
+            "id": 4,
+            "name": "keyboard",
+            "img": "./assets/img/dragAndDropGame/keyboard.png"
+        },
+        {
+            "id": 5,
+            "name": "mouse",
+            "img": "./assets/img/dragAndDropGame/mouse.png"
+        },
+        {
+            "id": 6,
+            "name": "printer",
+            "img": "./assets/img/dragAndDropGame/printer.png"
+        },
+        {
+            "id": 7,
+            "name": "ram",
+            "img": "./assets/img/dragAndDropGame/ram.png"
+        },
+        {
+            "id": 8,
+            "name": "rj45",
+            "img": "./assets/img/dragAndDropGame/rj45.png"
+        },
+        {
+            "id": 9,
+            "name": "screen",
+            "img": "./assets/img/dragAndDropGame/screen.png"
+        },
+        {
+            "id": 10,
+            "name": "speaker",
+            "img": "./assets/img/dragAndDropGame/speaker.png"
+        },
+        {
+            "id": 11,
+            "name": "usb",
+            "img": "./assets/img/dragAndDropGame/usb.png"
+        }
+    ]
+}

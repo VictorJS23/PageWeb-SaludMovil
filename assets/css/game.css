@@ -1,0 +1,37 @@
+.game-container {
+    border: 2px solid orange;
+    width: 100%;
+    /* margin: 50px auto; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 24px; */
+}
+
+
+.draggable-elements,
+.droppaple-elements {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    gap: 40px;
+    margin-bottom: 20px;
+    padding: 0 24px;
+    height: 110px;
+    /* background-color: red; */
+}
+
+.names {
+    border: 3px dashed blue;
+    /* min-width: 100px; */
+    /* padding: 0 10px; */
+    height: 120px;
+    width: 110px;
+    display: grid;
+    place-content: center;
+}
+
+.image {
+    width: 100px;
+}
