@@ -99,6 +99,8 @@ function EverydayExpressions () {
   mainContent.appendChild(form)
 }
 
+//----------------------------------------------------------------->>
+
 function ShortQuestions () {
   const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
