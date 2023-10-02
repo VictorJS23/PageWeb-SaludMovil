@@ -42,6 +42,12 @@ function EverydayExpressions () {
 
   // Code here ------>
 
+  const title = document.createElement('h1')
+  const addTitle = document.createTextNode('Making Objects')
+  title.appendChild(addTitle)
+  title.className = 'text-center text-primary'
+  mainContent.appendChild(title)
+
   const form = document.createElement('form')
   form.innerHTML = `
     <label for="firstname">Firstname:</label><br>
@@ -50,7 +56,7 @@ function EverydayExpressions () {
       <input type="text" id="lastname" name="lastname"><br>
     <label for="age">Age:</label><br>
       <input type="number" id="age" name="age"><br><br>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Enviar">
   `
 
   form.addEventListener('submit', (event) => {
