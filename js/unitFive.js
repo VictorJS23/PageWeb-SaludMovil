@@ -74,29 +74,51 @@ function EverydayExpressions () {
 
     localStorage.setItem('persona', JSON.stringify(persona))
 
-    const printPersona = ((obj) => {
-      for (let clave in obj){
-        mainContent.innerHTML += `<br> ${clave}: ${obj[clave]} <br>`
-        console.log(mainContent)
-      }
-    })
+    let here = true
 
-    printPersona(persona)
+    const validation = () => {
+      const array = [name, lastName, age]
+
+      for(i = 0; i < array.length; i++){
+        if(array[i] === ''){
+          alert(`${array[i]} no puede estar vacio`)
+          here = false
+          break
+        }
+      }
+
+      if(here === true){
+
+        const printPersona = ((obj) => {
+          for (let clave in obj){
+            mainContent.innerHTML += `<br> ${clave}: ${obj[clave]} <br>`
+            console.log(mainContent)
+          }
+        })
+        
+        printPersona(persona)
+
+        const btnGreet = document.createElement('button')
+        btnGreet.textContent = 'Greet'
+        btnGreet.addEventListener('click', () => {
+          mainContent.innerHTML += `<br><br> Hola <i>${name + " " + lastName}</i>, tu edad es de ${age} años. <br>`
+          console.log(mainContent)
+        })
+
+      }
+
+    }
+
+    validation()
 
     space()
-
-    const btnGreet = document.createElement('button')
-    btnGreet.textContent = 'Greet'
-    btnGreet.addEventListener('click', () => {
-      mainContent.innerHTML += `<br><br> Hola <i>${name + " " + lastName}</i>, tu edad es de ${age} años. <br>`
-      console.log(mainContent)
-    })
 
     mainContent.appendChild(btnGreet)
 
   })
 
   mainContent.appendChild(form)
+  
 }
 
 //----------------------------------------------------------------->>
@@ -108,9 +130,77 @@ function ShortQuestions () {
   nav.innerHTML = 'Short questions'
   nav.className = 'text-success'
 
+  const title = document.createElement('h1')
+  const addTitle = document.createTextNode('Citas Medicas')
+  title.appendChild(addTitle)
+  title.className = 'text-center text-primary'
+  mainContent.appendChild(title)
+
+  space = () => {
+    const espacio = document.createElement('br')
+    mainContent.appendChild(espacio)
+    return(espacio)
+  }
+
   // Code here ------>
+
+  space()
+
+  
+  
+  const formulario = (() => {
+
+    const cita = document.createElement('form')
+    cita.id = 'formCita'
+    cita.innerHTML = `
+      <label for="cita">Ingrese la cita a guardar:</label><br><br>
+      <input type="text" id="inputCita" name="cita"><br><br>
+      <input type="submit" value="Enviar cita"><br><br>
+      <input type="submit" id="btnNcita" value="Nueva cita"><br>
+    `
+    mainContent.appendChild(cita)
+
+    const getIdForm = document.getElementById('formCita')
+
+    getIdForm.addEventListener('submit', (event) => {
+      event.preventDefault()
+
+      const addCita = document.getElementById('inputCita').value
+
+      const readCita = ((cita) => {
+        space()
+        mainContent.innerHTML += `La cita ingresada fue: ${cita}`
+        return console.log(mainContent)
+      })
+
+      if (addCita === '') {
+        return alert('El campo no puede estar vacio')
+      } else {
+        return readCita(addCita)
+      }
+    
+    })
+
+  })
+
+  console.log('tryt')
+  formulario()
+  
+  const btnNewCita = document.getElementById('btnNcita')
+  btnNewCita.addEventListener('submit', (event) => {
+    event.preventDefault()
+    const newForm = formulario().value
+    formulario()
+    // EL valor de newForm se manipularia con el fetch
+  })
+  
+  mainContent.appendChild(inpCita)
+
 }
 
+// *****************************************************************************************
+//                                      CONEXIONES
+// *****************************************************************************************
 
 const btnPresentContinuous = document.getElementById('btnPresentContinuous')
 const btnEverydayExpressions = document.getElementById('btnEverydayExpressions')
